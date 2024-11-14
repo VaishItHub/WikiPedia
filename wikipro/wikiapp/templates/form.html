@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Summary Fetcher</title>
+</head>
+<body>
+    <h1>Enter Topics to Fetch Wikipedia Summaries</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="topics">Enter topics separated by commas:</label>
+        <input type="text" id="topics" name="topics" required>
+        <button type="submit">Get Summaries</button>
+    </form>
+</body>
+</html>
